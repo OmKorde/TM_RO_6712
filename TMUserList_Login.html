@@ -13,6 +13,18 @@
     </ul>
     <script>
          //Write code here to add another 5 language into the above list using function
+         function addLang(languages) {
+        const ul = document.querySelector('.lang_course');
+ 
+        languages.forEach(language => {
+            const li = document.createElement('li');
+            li.className = 'lang';
+            li.textContent = language;
+            ul.appendChild(li);
+        });
+    }
+ 
+    addLang(['js', 'react', 'nextjs', 'TS', 'css']);
     </script>
 </body>
 
